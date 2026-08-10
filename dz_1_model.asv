@@ -21,15 +21,29 @@ Jm_mom_inertia = 2.506*10^(-6);
 %time constant 
 taunp = 0.5;
 % drag factor 
-d_grag_factor = 4.406*10^(-7);
+d_grag_factor = 4.406*10*(-7);
 % ???
 wm0 = 82*2*pi;
 
 % U1
-step_time = 0;
+step_time = 2.5;
 initial_val = 0; 
-final_val_u1 = 663;
-final_val_u2 = 662;
-final_val_u3 = 663;
-final_val_u4 = 662;
+final_val_u1 = 5;
+final_val_u2 = 5;
+final_val_u3 = 5;
+final_val_u4 = 5;
 
+
+
+
+% U1
+step_time_u1 = 2.5;
+ = 0;
+
+% U1
+step_time_u1 = 2.5;
+initial_val_u1 = 0;
+
+% U1
+step_time_u1 = 2.5;
+initial_val_u1 = 0;
