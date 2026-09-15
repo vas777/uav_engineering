@@ -1,4 +1,4 @@
-% Define the symbolic variables
+Define the symbolic variables
 mass_quadrotor = 1.07;
 g = 9.81;
 lever = 0.214; % meters
@@ -22,14 +22,3 @@ Jm_mom_inertia = 2.506*10^(-6);
 taunp = 0.5;
 % drag factor 
 d_grag_factor = 4.406*10^(-7);
-% ???
-wm0 = 82*2*pi;
-
-% U1
-step_time = 0;
-initial_val = 0; 
-final_val_u1 = 663;
-final_val_u2 = 662;
-final_val_u3 = 663;
-final_val_u4 = 662;
-
