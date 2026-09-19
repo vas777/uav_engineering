@@ -55,8 +55,12 @@ E = [ 1, 0,         -sin(theta);
     0, -sin(phi), cos(phi)*cos(theta)];
 
 % Omega = E * Euler_rates
-% therefore if E is inverted
+% therefore with E inverted we could do
+% reversed transformation
 Euler_rates = inv(E) * Omega;
+phi_dot = Euler_rates(1);
+theta_dot = Euler_rates(2);
+psi_dot = Euler_rates(3);
 
 % Earth-Relative Velocities
 % The Direction Cosine Matrix (DCM) for standard Yaw-Pitch-Roll sequence
@@ -103,10 +107,10 @@ disp('--- Earth-Frame Yaw Rate (psi_dot) ---');
 pretty(simplify(psi_dot))
 
 disp('--- Earth-Relative X-Axis Velocity (misnamed V_ex_dot) ---');
-pretty(simplify(V_ex_dot))
+pretty(simplify(V_ex))
 
 disp('--- Earth-Relative Y-Axis Velocity (misnamed V_ey_dot) ---');
-pretty(simplify(V_ey_dot))
+pretty(simplify(V_ey))
 
 disp('--- Earth-Relative Z-Axis Velocity (misnamed V_ez_dot) ---');
-pretty(simplify(V_ez_dot))
+pretty(simplify(V_ez))
